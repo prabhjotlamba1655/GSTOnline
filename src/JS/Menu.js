@@ -3,10 +3,26 @@ import '../CSS/Menu.css'
 import { Link } from 'react-router-dom'
 import CallIcon from '@material-ui/icons/Call';
 
+
 function Menu() {
     return (
         <nav className="menu">
             <div className="header__second">
+
+                {/* <div className="navbar">
+                    <div className="dropdown">
+                        <button className="dropbtn">Blog
+                        <i className="fa fa-caret-down" aria-hidden="true"></i>
+                        </button>
+                        <div className="dropdown-content">
+                            <a href="#">GST</a>
+                            <a href="#">FSSAI</a>
+                            <a href="#">MSME/UDYAM</a>
+                            <a href="#">E Way Bill</a>
+                            <a href="#">PAN Card</a>
+                        </div>
+                    </div>
+                </div> */}
 
                 <Link className="second__links" to="/">
                     <span className="second__links">
@@ -47,12 +63,12 @@ function Menu() {
                 <div className="phone">
                     <span className="contact__icon">
                         <CallIcon className="contact__icon" />
-                    </span> 
+                    </span>
                     <a className="second__links" href={`tel: ${9315744106}`}>
-                    +91 9315744106
+                        +91 9315744106
                     </a>
                 </div>
-                
+
             </div>
         </nav>
     )

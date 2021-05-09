@@ -15,7 +15,7 @@ function Home() {
 
     const history = useHistory();
     const inputRefs = React.useRef([
-        React.createRef(), React.createRef()
+        React.createRef(), React.createRef(), React.createRef()
     ]);
 
     const [data, setData] = React.useState({});
@@ -91,15 +91,15 @@ function Home() {
                                 ref={inputRefs.current[1]}
                                 name="email"
                                 label="Email*:"
-                                validation="required"
+                                validation={"required"}
                                 onChange={handleChange}
                             />
 
                             <InputField
-                                ref={inputRefs.current[1]}
+                                ref={inputRefs.current[2]}
                                 name="number"
                                 label="Phone Number*:"
-                                validation="required|min:10|max:10"
+                                validation={"required|min:10|max:10"}
                                 onChange={handleChange}
                             />
                             <Button type="submit" className="home__button">Submit</Button>
